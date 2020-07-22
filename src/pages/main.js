@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, TouchableOpacity, Text, StyleSheet} from 'react-native';
+import {Actions} from 'react-native-router-flux';
 
 import counterActions from '../store/counter/constants';
 import Counter from '../components/Counter';
@@ -20,6 +21,7 @@ const Main = () => {
           <Text>INCREASE</Text>
         </TouchableOpacity>
       </View>
+      <Text onPress={() => Actions.secondary()}>Go To Secondary Page</Text>
     </View>
   );
 };
